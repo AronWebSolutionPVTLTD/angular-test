@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true">
+  <div class="profile_container">
+    <div class="profile_box" *ngFor="let user of result">
+        <div class="profile_img">
+            <img src={{user.img}} alt="">
+        </div>
+        <div class="profile_info"  >
+            <h2 class="profile_name">{{user.name}}</h2>
+            <p class="profile_email">{{user.email}}</p>
+        </div>
+        <div class="profile_btns">
+            <a class="btn hover-filled-slide-down primary_btn"><span><i class="fa-solid fa-user-plus"></i> Follow</span></a>
+            <a class="btn hover-slide-up secondary_btn"><span><i class="fa-solid fa-share-nodes"></i> Share</span></a>
+        </div>
+    </div>
+</div>
+</ion-content>
